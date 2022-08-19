@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Practice_BackgroundBlurEffect" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="foodOnMind2" translatesAutoresizingMaskIntoConstraints="NO" id="SX9-gl-gKU">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swiggyFood1" translatesAutoresizingMaskIntoConstraints="NO" id="IQW-BF-Zoi">
+                                <rect key="frame" x="107" y="348" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Hqx-SQ-GIX"/>
+                                    <constraint firstAttribute="height" constant="200" id="hji-uL-JXM"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="IQW-BF-Zoi" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Od5-g7-JaD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SX9-gl-gKU" secondAttribute="trailing" id="Pvd-5R-VlH"/>
+                            <constraint firstItem="IQW-BF-Zoi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="p3h-V4-zpC"/>
+                            <constraint firstItem="SX9-gl-gKU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="vd9-vz-iZN"/>
+                            <constraint firstItem="SX9-gl-gKU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wvp-vb-Kzg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SX9-gl-gKU" secondAttribute="bottom" id="zi9-Pj-1wm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bgImg" destination="SX9-gl-gKU" id="jVc-qc-DUA"/>
+                        <outlet property="frontIMG" destination="IQW-BF-Zoi" id="AJC-UQ-Hu2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="53.571428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="foodOnMind2" width="225" height="225"/>
+        <image name="swiggyFood1" width="708" height="275"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
